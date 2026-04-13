@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv("titanic.csv")
+
+# 1. Fill missing values
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+
+# 2. Drop unwanted columns
+df.drop(['Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
+
+# 3. Convert categorical data
+df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
+
+# 4. Remove duplicates
+df.drop_duplicates(inplace=True)
+
+# 5. Save cleaned dataset
+df.to_csv("cleaned_titanic.csv", index=False)
+
+print("Data cleaned and saved successfully!")
