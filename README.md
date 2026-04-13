@@ -26,3 +26,22 @@ The dataset contains details of passengers such as age, gender, class, fare, and
 3. Data Analysis  
 4. Data Visualization  
 5. Model Building
+## 📌 Introduction
+This project focuses on cleaning and analyzing the Titanic dataset using Python.
+
+## 🎯 Objectives
+- To clean and preprocess data  
+- To remove missing values  
+- To handle duplicate data  
+- To improve data quality  
+
+## 📊 Visualization
+Bar charts and histograms are used to understand survival patterns and age distribution.
+
+## 🛠️ Tools Used
+- Python  
+- Pandas  
+- Matplotlib  
+
+## ✅ Conclusion
+The dataset is cleaned and visualized for better analysis.
